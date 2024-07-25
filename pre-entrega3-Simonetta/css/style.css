@@ -1,0 +1,155 @@
+:root {
+    --primario: #d5f4e6;
+    --secundario: #d4dcc1;
+    --claro: #fefbd8;
+    --oscuro: #618685;
+    --rojo: #eb9137;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: var(--secundario);
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.navbar {
+    font-size: 2rem;
+    background-color: var(--oscuro);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-right: 30rem;
+    color: var(--claro);
+}
+
+.nav-bar:hover {
+    color: var(--secundario);
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.nav-link {
+    color: var(--claro);
+}
+
+.inputs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80rem, 1fr));
+    gap: 5rem;
+    background-color: var(--secundario);
+}
+
+.ingreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--oscuro);
+    margin: 5rem;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.gastos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--oscuro);
+    margin: 5rem;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.form-label {
+    font-size: 1.8rem;
+}
+
+.form-control {
+    width: 25rem;
+    font-size: 1.8rem;
+}
+
+.btn {
+    background-color: var(--oscuro);
+    font-size: 1.8rem;
+    border: none;
+    margin: 1rem;
+    color: var(--claro);
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.lista ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.totales {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.totalIngresos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--oscuro);
+    margin: 5rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+    background-color: white; 
+}
+
+.totalGastos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--oscuro);
+    margin: 5rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+    background-color: white; 
+}
+
+.saldo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.saldoTotal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--oscuro);
+    margin: 5rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+    background-color: white;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODER BANK FESTIVAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="position-fixed top-0 w-100">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Calculadora de Gastos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="guardarDatos">Guardar Datos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cargarDatos">Cargar Datos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="borrarDatos">Reiniciar App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="inputs">
+            <article class="ingreso">
+                <h2>AGREGUE INGRESOS</h2>
+                <div class="mb-3 mx-auto">
+                    <label for="detalleIngreso" class="form-label">Detalle de Ingreso</label>
+                    <input class="form-control" id="detalleIngreso" placeholder="Ej.: Sueldo">
+                  </div>
+                  <div class="mb-3">
+                    <label for="montoIngreso" class="form-label">Monto</label>
+                    <input class="form-control" type="number" id="montoIngreso">
+                </div>
+                <div>
+                    <button type="submit" class="btn" id="btnIngreso">Agregar Ingreso</button>
+                </div>
+                <div>
+                    <ul id="listaIngresos"><button>x</button></ul>
+                </div>
+            </article>
+            <article class="gastos">
+                <h2>AGREGUE GASTOS</h2>
+                <div class="mb-3">
+                    <label for="detalleGasto" class="form-label">Detalle de Gasto</label>
+                    <input class="form-control" id="detalleGasto" placeholder="Ej.: Expensas">
+                  </div>
+                  <div class="mb-3">
+                    <label for="montoGasto" class="form-label">Monto</label>
+                    <input class="form-control" type="number" id="montoGasto">
+                </div>
+                <div>
+                    <button type="submit" class="btn" id="botonGastos">Agregar Gasto</button>
+                </div>
+                <div>
+                    <ul id="listaGastos"></ul>
+                </div>
+            </article>
+            <div>
+                <ul class="lista"></ul>
+            </div>
+        </section>
+        <section class="totales">
+            <article class="totalIngresos">
+                <h3>Total Ingresos</h3>
+                <p id="totalIngresos"></p>
+            </article>
+            <article class="totalGastos">
+                <h3>Total Gastos</h3>
+                <p id="totalGastos"></p>
+            </article>
+        </section>
+        <section class="saldo">
+            <article class="saldoTotal">
+                <h3>Saldo</h3>
+                <p id="saldoTotal"></p>
+            </article>
+        </section>
+    </main>
+    <script src="./JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                alert("Bienvenidos CODER BANK FESTIVAL");
+                let script = document.createElement('script');
+                script.src = './main.js';
+                document.body.appendChild(script);
+            }, 100);
+        };
+    </script>
+</body>
+</html>
+
